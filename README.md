@@ -29,5 +29,18 @@ contract Error {
 
 > Assert should only be used for internal errors and for check constant numbers
 
+## Function Modifier
+    Modifiers are code that can be run before and / or after a function call.
 
+Modifiers can be used to:
 
+- Restrict access
+- Validate inputs
+- Guard against reentrancy hack
+
+```js
+// Sets the deployer of the contract as the owner of the contract
+  constructor() {
+        owner = msg.sender;
+    }
+```
